@@ -12,16 +12,14 @@ int cbinsearch(int *arr, int size, int value) {
             for (int i = mid - 1; i >= 0; i--) {
                 if (arr[i] == value) {
                     count++;
-                }
-                else {
+                } else {
                     break;
                 }
             }
             for (int i = mid + 1; i < size; i++) {
                 if (arr[i] == value) {
                     count++;
-                }
-                else {
+                } else {
                     break;
                 }
             }
@@ -29,8 +27,7 @@ int cbinsearch(int *arr, int size, int value) {
         }
         else if (arr[mid] < value) {
             left = mid + 1;
-        }
-        else {
+        } else {
            right = mid - 1;
         }
     }
